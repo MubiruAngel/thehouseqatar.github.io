@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="static/main.css">
+    <h1 id="h1">SUBMISSION FORM</h1>
+    <br/>
+    <br/>
+</head>
+<body>
+    <h2 id="h2">Please submit your results below!</h2>
+    <br/>
+    <div id="contain" class="submission">
+        <form id="forms" onsubmit="testingResults()" action="http://127.0.0.1:5000/login.html">
+            <div>
+                <label name="eng">ENGLISH</label><br/>
+                <input type="number" id="english" name="eng"><br/><br/>
+                <label name="math">MATHS</label><br/>
+                <input type="number" id="maths" name="math"><br/><br/>
+                <label name="phys">PHYSICS</label><br/>
+                <input type="number" id="physics" name="phys"><br/><br/>
+                <label name="chem">CHEMISTRY</label><br/>
+                <input type="number" id="chemistry" name="chem"><br/><br/>
+                <button id="btn" type="button" onclick="return testingResults()">SUBMIT</button><br/>
+            </div>
+            
+            
+            
+        </form>
+    </div>
+    <div class="bodyParty">
+        <p id="paragraph"></p>
+        <p id="para"></p>
+    </div>
+    <script src="/static/java.js"></script>
+
+    
+</body>
+</html>
